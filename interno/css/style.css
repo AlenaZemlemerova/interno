@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  background: #FFF;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 53px;
+  padding-bottom: 57px;
+}
+.header__link {
+  font-size: 20px;
+  font-weight: 400;
+  color: #292F36;
+  transition: 0.4s;
+}
+.header__link:hover {
+  color: #CDA274;
+}
+.header__nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 3.5vw;
+}
+
+/* Banner */
+.banner {
+  margin-bottom: 96px;
+}
+.banner__img {
+  max-width: 100%;
+}
+.banner__box {
+  max-width: 434px;
+  position: absolute;
+  top: 345px;
+  margin-left: 3%;
+}
+.banner__title {
+  color: #292F36;
+  font-family: "DM Serif Display", serif;
+  font-size: 65px;
+  line-height: 125%;
+  margin-bottom: 16px;
+}
+.banner__text {
+  color: #4D5053;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 21px;
+  line-height: 150%;
+  letter-spacing: 0.22px;
+}
+.banner__button {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 600;
+  max-width: 225px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 26px 49px 26px 48px;
+  background: #292F36;
+  border-radius: 18px;
+  box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
+  transition: 0.6s;
+}
+.banner__button:hover {
+  color: #CDA274;
+  background: #FFF;
+  min-width: 225px;
+  padding: 25px 48px 25px 47px;
+  border: 1px solid #CDA274;
+}
+
+/* Project */
+.project__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.project__title {
+  width: 737;
+  color: #292F36;
+  font-family: "DM Serif Display", serif;
+  font-size: 50px;
+  line-height: 125%;
+  letter-spacing: 1px;
+}
+.project__text {
+  width: 737px;
+  display: flex;
+  justify-content: center;
+  color: #4D5053;
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: 0.22px;
+  margin-bottom: 93px;
+}/*# sourceMappingURL=style.css.map */
