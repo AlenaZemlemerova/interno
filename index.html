@@ -1,43 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-</head>
-<body>
-    <div id="app">
-        <button @click="reverseText">{{message}}</button>
-        <ol>
-            <li v-for="(item) in elements">
-                {{item.text}}
-            </li>
-        </ol> 
-        <button @click="pushElement">Добавить</button>
-    </div>
-    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Interno</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="header">
+                    <a href="index.html" class="header__logo">
+                        <img src="img/logo.svg" alt="Logo" />
+                    </a>
+                    <nav class="header__nav">
+                        <a href="#" class="header__link">Home</a>
+                        <a href="#" class="header__link">Project</a>
+                        <a href="#" class="header__link">Blog</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section class="banner">
+            <div class="container">
+                <img class="banner__img" src="img/banner-img.png" alt="Banner" />
+                <div class="banner__box">
+                    <h1 class="banner__title">Let Your Home Be Unique</h1>
+                    <p class="banner__text">
+                        There are many variations of the passages of lorem Ipsum
+                        fromavailable, majority.
+                    </p>
+                    <a class="banner__button" href="#">Get Started <img
+                            src="img/vector.svg" alt="Get Started" /></a>
+                </div>
+            </div>
+        </section>
+        <section class="project">
+            <div class="container">
+                <header class="project__header">
+                    <h2 class="project__title">Follow Our Projects</h2>
+                    <p class="project__text">
+                        It is a long established fact that a reader will be
+                        distracted by
+                        the of readable content of page lookings at its layouts
+                        points.
+                    </p>
+                </header>
+                <div class="project__box">
+                    <figure class="project__item">
+                        <img
+                            class="project__item-img"
+                            src="img/project-img1.png"
+                            alt="Modern Kitchan" />
+                        <figcaption class="project__item-title">
+                            <div class="project__item-description">
+                                <h4 class="item-head">Modern Kitchan</h4>
+                                <a class="item-link" href="#">Decor /
+                                    Artchitecture</a>
+                            </div>
+                            <a class="project__item-vector" href="#"><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="70"
+                                    height="70"
+                                    viewBox="0 0 70 70"
+                                    fill="none">
+                                    <circle cx="35" cy="35" r="35"
+                                        fill="#F4F0EC" />
+                                    <path
+                                        d="M32 44L40 35L32 26"
+                                        stroke="#292F36"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" /></svg></a>
+                        </figcaption>
+                    </figure>
+                    <figure class="project__item">
+                        <img
+                            class="project__item-img"
+                            src="img/project-img2.png"
+                            alt="Modern Kitchan" />
+                        <figcaption class="project__item-title">
+                            <div class="project__item-description">
+                                <h4 class="item-head">Modern Kitchan</h4>
+                                <a class="item-link" href="#">Decor /
+                                    Artchitecture</a>
+                            </div>
+                            <a class="project__item-vector" href="#"><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="70"
+                                    height="70"
+                                    viewBox="0 0 70 70"
+                                    fill="none">
+                                    <circle cx="35" cy="35" r="35"
+                                        fill="#F4F0EC" />
+                                    <path
+                                        d="M32 44L40 35L32 26"
+                                        stroke="#292F36"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" /></svg></a>
+                        </figcaption>
+                    </figure>
+                    <figure class="project__item">
+                        <img
+                            class="project__item-img"
+                            src="img/project-img3.png"
+                            alt="Modern Kitchan" />
+                        <figcaption class="project__item-title">
+                            <div class="project__item-description">
+                                <h4 class="item-head">Modern Kitchan</h4>
+                                <a class="item-link" href="#">Decor /
+                                    Artchitecture</a>
+                            </div>
+                            <a class="project__item-vector" href="#"><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="70"
+                                    height="70"
+                                    viewBox="0 0 70 70"
+                                    fill="none">
+                                    <circle cx="35" cy="35" r="35"
+                                        fill="#F4F0EC" />
+                                    <path
+                                        d="M32 44L40 35L32 26"
+                                        stroke="#292F36"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" /></svg></a>
+                        </figcaption>
+                    </figure>
+                    <figure class="project__item">
+                        <img
+                            class="project__item-img"
+                            src="img/project-img4.png"
+                            alt="Modern Kitchan" />
+                        <figcaption class="project__item-title">
+                            <div class="project__item-description">
+                                <h4 class="item-head">Modern Kitchan</h4>
+                                <a class="item-link" href="#">Decor /
+                                    Artchitecture</a>
+                            </div>
+                            <a class="project__item-vector" href="#"><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="70"
+                                    height="70"
+                                    viewBox="0 0 70 70"
+                                    fill="none">
+                                    <circle cx="35" cy="35" r="35"
+                                        fill="#F4F0EC" />
+                                    <path
+                                        d="M32 44L40 35L32 26"
+                                        stroke="#292F36"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" /></svg></a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section class="counter container">
+            <div class="counter__box">
+                <h1 class="counter-number">12</h1>
+                <p class="counter-text">Years Of Experiance</p>
+            </div>
+            <div class="counter__box">
+                <h1 class="counter-number">85</h1>
+                <p class="counter-text">Success Project</p>
+            </div>
+            <div class="counter__box">
+                <h1 class="counter-number">15</h1>
+                <p class="counter-text">Active Project</p>
+            </div>
+            <div class="counter__box">
+                <h1 class="counter-number">95</h1>
+                <p class="counter-text">Happy Customers</p>
+            </div>
+        </section>
+        <section class="blog container">
+            <header class="blog__header">
+                <h1 class="blog__header-title">Articles & News</h1>
+                <p class="blog__header-text">
+                    It is a long established fact that a reader will be
+                    distracted by the
+                    of readable content of a page when lookings at its layouts
+                    the points
+                    of using.
+                </p>
+            </header>
+            <div class="blog__box">
+                <div class="blog__item">
+                    <div class="blog__item-img">
+                        <a href="#"><img class="item-image" src="img/blog-img1.png" alt="Blog-image"/>
+                        <p class="blog__item-text">Kitchan Design</p></a>
+                    </div>
+                    <h2 class="blog__item-title">
+                        Let’s Get Solution For Building Construction Work
+                    </h2>
+                    <div class="blog__item-bottom">
+                        <p class="blog__item-data">26 December,2022</p>
+                        <a class="blog__item-vector" href="#"><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="52"
+                                height="53"
+                                viewBox="0 0 52 53"
+                                fill="none">
+                                <circle cx="26" cy="26.267" r="26"
+                                    fill="#F4F0EC" />
+                                <path
+                                    d="M23.7714 32.9527L29.7143 26.267L23.7714 19.5813"
+                                    stroke="#292F36"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round" /></svg></a>
+                    </div>
+                </div>
+                <div class="blog__item">
+                    <div class="blog__item-img">
+                        <a href="#"><img class="item-image" src="img/blog-img2.png" alt="Blog-image" />
+                        <p class="blog__item-text">Living Design</p></a>
+                    </div>
+                    <h2 class="blog__item-title">
+                        Low Cost Latest Invented Interior Designing Ideas.
+                    </h2>
+                    <div class="blog__item-bottom">
+                        <p class="blog__item-data">22 December,2022</p>
+                        <a class="blog__item-vector" href="#"><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="52"
+                                height="53"
+                                viewBox="0 0 52 53"
+                                fill="none">
+                                <circle cx="26" cy="26.267" r="26"
+                                    fill="#F4F0EC" />
+                                <path
+                                    d="M23.7714 32.9527L29.7143 26.267L23.7714 19.5813"
+                                    stroke="#292F36"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round" /></svg></a>
+                    </div>
+                </div>
+                <div class="blog__item">
+                    <div class="blog__item-img">
+                        <a href="#"><img class="item-image" src="img/blog-img3.png" alt="Blog-image" />
+                        <p class="blog__item-text">Interior Design</p></a>
+                    </div>
+                    <h2 class="blog__item-title">
+                        Best For Any Office & Business Interior Solution
+                    </h2>
+                    <div class="blog__item-bottom">
+                        <p class="blog__item-data">25 December,2022</p>
+                        <a class="blog__item-vector" href="#"><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="52"
+                                height="53"
+                                viewBox="0 0 52 53"
+                                fill="none">
+                                <circle cx="26" cy="26.267" r="26"
+                                    fill="#F4F0EC" />
+                                <path
+                                    d="M23.7714 32.9527L29.7143 26.267L23.7714 19.5813"
+                                    stroke="#292F36"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round" /></svg></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer container">
 
-    <script>
-        new Vue({
-            el: '#app',
-            data: {
-                message: 'Перевернуть',
-                elements: [
-                    {text: 'новый элемент1'},
-                    {text: 'новый элемент2'}
-                ]
-            },
-            methods: {
-                reverseText() {
-                    this.message = this.message.split('').reverse().join('');
-                    return this.message;
-                },
-                pushElement() {
-                    this.elements.push({text: 'Новый элемент списка'});
-                }
-            }            
-        })
-    </script>    
-</body>
+        </footer>
+    </body>
 </html>
