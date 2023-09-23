@@ -29,6 +29,9 @@ a {
   padding-top: 53px;
   padding-bottom: 57px;
 }
+.header__logo {
+  max-width: 177px;
+}
 .header__link {
   font-size: 20px;
   font-weight: 400;
@@ -261,4 +264,77 @@ a {
 }
 .blog__item-vector:hover path {
   fill: #CDA274;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  gap: 101px;
+  justify-content: space-between;
+  margin-bottom: 134px;
+}
+.footer__box {
+  display: flex;
+  flex-direction: column;
+}
+.footer__logo {
+  margin-bottom: 18px;
+}
+.footer__text {
+  color: #4D5053;
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: 0.22px;
+}
+.footer__title {
+  font-family: "DM Serif Display", serif;
+  color: #292F36;
+  font-size: 25px;
+  line-height: 125%;
+}
+.footer__icon {
+  display: flex;
+  flex-direction: left;
+  gap: 54px;
+}
+.footer__nav {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.footer__link {
+  color: #4D5053;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 300%;
+  letter-spacing: 0.22px;
+}
+.footer__link:hover {
+  color: #CDA274;
+}
+
+.box-left {
+  max-width: 393px;
+}
+
+.box-center {
+  max-width: 125px;
+}
+
+.box-right {
+  max-width: 258px;
+  display: flex;
+  gap: 25px;
+}
+
+.text-left {
+  margin-bottom: 31px;
+}
+
+.fa-brands {
+  color: #292F36;
+  font-size: 18px;
+}
+.fa-brands:hover {
+  color: #CDA274;
 }/*# sourceMappingURL=style.css.map */
