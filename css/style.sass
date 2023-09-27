@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost:wght@400;600&display=swap')
 
 @import 'vars'
+@import 'blog'
 
 *
     margin: 0
@@ -97,7 +98,8 @@ a
             min-width: 225px
             padding: 25px 48px 25px 47px
             border: 1px solid $mainColorSite
-            
+
+
 /* Project */
 
 .project
@@ -260,16 +262,24 @@ a
             color: $headerColor
             font-family: 'DM Serif Display', serif
             font-size: 25px
-            margin-bottom: 30px
+            margin-bottom: 30px 
 
         &-bottom
             display: flex
             justify-content: space-between
             align-items: center
-            margin-bottom: 133px
+           
         
         &-vector:hover path
             fill: $mainColorSite
+
+    &__item-data
+        color: $textColor
+        font-size: 16px
+        font-weight: 400
+        line-height: 150%
+        letter-spacing: 0.16px
+
 
 /* Footer */
 .footer
@@ -277,6 +287,7 @@ a
     gap: 101px
     justify-content: space-between
     margin-bottom: 134px
+    margin-top: 96px
     
     &__box
         display: flex
